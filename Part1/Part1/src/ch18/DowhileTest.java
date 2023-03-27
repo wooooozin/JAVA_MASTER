@@ -19,7 +19,7 @@ public class DowhileTest {
 			sum += input;
 		} while (input != 0);
 
-			
+		scanner.close();
 		System.out.println(sum);
 		
 	}
