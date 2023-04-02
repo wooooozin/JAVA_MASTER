@@ -1,4 +1,4 @@
-package ch02;
+package ch03;
 
 import java.awt.geom.Ellipse2D;
 
@@ -19,7 +19,13 @@ public class CustomerTest {
 		vipCustomer.showCustomerInfo();
 		
 		Customer lee = new VIPCustomer(1002, "LEE");
-		// Customer 타입의 변수 및 메서드만 사용가능
+		// Customer 타입의 변수만 사용가능
+		// 인스턴스 메서드는 사용 가
+		
+		System.out.println(vipCustomer.showCustomerInfo());
+		int cost = vipCustomer.calcPrice(1000);
+		System.out.println(cost);
+		
 		
 	}
 
